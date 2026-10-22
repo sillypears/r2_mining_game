@@ -22,6 +22,7 @@ scout-capture frame numbers.
                                                       | node, e.g. London)|
                                                       +------------------+
 ```
+
 ```mermaid
 sequenceDiagram
     autonumber
@@ -58,7 +59,7 @@ sequenceDiagram
     C->>S: ECDHE-RSA-AES256-GCM-SHA384, x25519, NewSessionTicket
     S-->>C: epoch-1 app data: join dump 1080 B, then 60 Hz stream
     Note over C,S: load/join bursts ~1–2 s → clock re-sync (netcheck: connect/restart re-sync)
-    Note over C,S: match runs 0 loss, flat RTT; end-of-match taper at −4 s
+    Note over C,S: match runs 0 loss, flat RTT; final taper at -4 s
 ```
 
 * Client runs SnapNet 5.9.0 over a UDP transport whose payload is a DTLS 1.2 session
