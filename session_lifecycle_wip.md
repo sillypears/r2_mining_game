@@ -23,8 +23,6 @@ scout-capture frame numbers.
                                                       +------------------+
 ```
 
-Mermaid version (renders on GitHub):
-
 ```mermaid
 sequenceDiagram
     autonumber
